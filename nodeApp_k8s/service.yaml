@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodeapp-service
+spec:
+  selector:
+    app: nodeapp
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 5000        # Puerto del servicio dentro del cluster
+      targetPort: 5000  # Puerto del contenedor
+      nodePort: 30001   # Puerto expuesto en tu máquina
