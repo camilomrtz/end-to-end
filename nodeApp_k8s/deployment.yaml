@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nodeapp
-        image: nodeapp:latest
-        imagePullPolicy: Never
+        image: milod0k3r/nodeapp:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
