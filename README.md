@@ -31,8 +31,5 @@ hello-devops/
 ├── service.yaml        # Servicio de Kubernetes
 └── README.md           # Este archivo
 
-•
-•
-•
 
 🚧 proyecto en construcción: ... 🚧
