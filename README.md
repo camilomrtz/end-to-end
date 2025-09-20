@@ -30,6 +30,9 @@ hello-devops/
 ├── deployment.yaml     # Manifiesto de Kubernetes
 ├── service.yaml        # Servicio de Kubernetes
 └── README.md           # Este archivo
-
-
+•
+•
+•
+🚧 proyecto en construcción: ... 🚧
+🚧 proyecto en construcción: ... 🚧
 🚧 proyecto en construcción: ... 🚧
