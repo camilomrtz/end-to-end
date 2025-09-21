@@ -11,6 +11,8 @@ Este proyecto tiene como objetivo repasar y demostrar un **ciclo de vida complet
 - Reforzar buenas prácticas de **versionado y automatización**.  
 
 ---
+---
+---
 
 ## 🛠️ Tecnologías utilizadas
 - **Lenguaje:** Python (Flask) o Node.js (Express).  
@@ -21,6 +23,8 @@ Este proyecto tiene como objetivo repasar y demostrar un **ciclo de vida complet
 - **Infraestructura:** AWS (más adelante).  
 
 ---
+---
+---
 
 ## 📂 Estructura del repositorio
 ```bash
@@ -30,9 +34,5 @@ hello-devops/
 ├── deployment.yaml     # Manifiesto de Kubernetes
 ├── service.yaml        # Servicio de Kubernetes
 └── README.md           # Este archivo
-•
-•
-•
-🚧 proyecto en construcción: ... 🚧
-🚧 proyecto en construcción: ... 🚧
+
 🚧 proyecto en construcción: ... 🚧
