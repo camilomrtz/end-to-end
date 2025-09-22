@@ -11,8 +11,6 @@ Este proyecto tiene como objetivo repasar y demostrar un **ciclo de vida complet
 - Reforzar buenas prácticas de **versionado y automatización**.  
 
 ---
----
----
 
 ## 🛠️ Tecnologías utilizadas
 - **Lenguaje:** Python (Flask) o Node.js (Express).  
@@ -22,8 +20,6 @@ Este proyecto tiene como objetivo repasar y demostrar un **ciclo de vida complet
 - **Monitoreo:** Prometheus + Grafana.  
 - **Infraestructura:** AWS (más adelante).  
 
----
----
 ---
 
 ## 📂 Estructura del repositorio
@@ -35,4 +31,7 @@ hello-devops/
 ├── service.yaml        # Servicio de Kubernetes
 └── README.md           # Este archivo
 
+🚧 proyecto en construcción: ... 🚧
+•
+•
 🚧 proyecto en construcción: ... 🚧
