@@ -13,7 +13,6 @@ Este proyecto tiene como objetivo repasar y demostrar un **ciclo de vida complet
 ---
 
 
-•••
 ## 🛠️ Tecnologías utilizadas
 - **Lenguaje:** Python (Flask) o Node.js (Express).  
 - **Contenerización:** Docker.  
@@ -26,7 +25,6 @@ Este proyecto tiene como objetivo repasar y demostrar un **ciclo de vida complet
 
 
 
-•••
 ## 📂 Estructura del repositorio
 ```bash
 hello-devops/
@@ -36,4 +34,7 @@ hello-devops/
 ├── service.yaml        # Servicio de Kubernetes
 └── README.md           # Este archivo
 
+🚧 proyecto en construcción: ... 🚧
+🚧 proyecto en construcción: ... 🚧
+🚧 proyecto en construcción: ... 🚧
 🚧 proyecto en construcción: ... 🚧
