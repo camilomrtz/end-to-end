@@ -11,6 +11,8 @@ Este proyecto tiene como objetivo repasar y demostrar un **ciclo de vida complet
 - Reforzar buenas prácticas de **versionado y automatización**.  
 
 ---
+•
+•
 
 
 ## 🛠️ Tecnologías utilizadas
@@ -23,7 +25,8 @@ Este proyecto tiene como objetivo repasar y demostrar un **ciclo de vida complet
 
 ---
 
-
+•
+•
 
 ## 📂 Estructura del repositorio
 ```bash
@@ -35,6 +38,4 @@ hello-devops/
 └── README.md           # Este archivo
 
 🚧 proyecto en construcción: ... 🚧
-🚧 proyecto en construcción: ... 🚧
-🚧 proyecto en construcción: ... 🚧
-🚧 proyecto en construcción: ... 🚧
+
