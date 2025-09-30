@@ -1,9 +1,21 @@
-FROM node:18
+FROM node:18-alpine
+
 WORKDIR /app
 
-# Crea un package.json básico dentro del contenedor
-RUN npm init -y
-RUN npm install express
+# Copia el package.json y package-lock.json (si existe)
+COPY package*.json ./
 
+# Instala las dependencias EXACTAMENTE como están en package.json
+RUN npm install --production
+
+# Instala prometheus client
+RUN npm install prom-client
+
+# Copia el resto del código
 COPY . .
-CMD ["node", "app.js"]
+
+# Expone el puerto
+EXPOSE 3000
+
+# Ejecuta la aplicación
+CMD ["npm", "start"]
