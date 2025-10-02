@@ -8,6 +8,6 @@ spec:
   type: NodePort
   ports:
     - protocol: TCP
-      port: 5000        # Puerto del servicio dentro del cluster
-      targetPort: 5000  # Puerto del contenedor
+      port: 3000        # Puerto del servicio dentro del cluster
+      targetPort: 3000  # Puerto del contenedor
       nodePort: 30001   # Puerto expuesto en tu máquina
