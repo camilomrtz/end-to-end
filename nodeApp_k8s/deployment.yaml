@@ -2,8 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodeapp-deployment
+  labels:
+    app: nodeapp
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: nodeapp
@@ -14,7 +16,6 @@ spec:
     spec:
       containers:
       - name: nodeapp
-        image: milod0k3r/nodeapp:latest
-        imagePullPolicy: Always
+        image: milod0k3r/nodeapp:latest   # O tu repo en DockerHub: milo/devops-monitor:latest
         ports:
-        - containerPort: 5000
+        - containerPort: 3000
