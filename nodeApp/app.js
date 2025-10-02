@@ -62,7 +62,26 @@ app.get('/', (req, res) => {
   res.send('🚀 DevOps Monitor está funcionando (pero falta index.html)');
 });
 
-// Configurar sockets si está disponible
+// Actualizar métricas de forma continua (siempre activo)
+setInterval(() => {
+  const cpu = Math.floor(Math.random() * 30) + 20;
+  const memory = Math.floor(Math.random() * 15) + 60;
+
+  // Siempre actualizar métricas Prometheus
+  cpuGauge.set(cpu);
+  memoryGauge.set(memory);
+
+  // Emitir por WebSocket si hay clientes conectados
+  if (io) {
+    io.emit('metrics', { 
+      cpu, 
+      memory, 
+      timestamp: new Date().toISOString() 
+    });
+  }
+}, 2000);
+
+// Configurar WebSocket si está disponible
 if (io) {
   io.on('connection', (socket) => {
     console.log('🔌 Cliente conectado:', socket.id);
@@ -72,23 +91,8 @@ if (io) {
       timestamp: new Date().toISOString()
     });
     
-    const interval = setInterval(() => {
-      const metrics = {
-        cpu: Math.floor(Math.random() * 30) + 20,
-        memory: Math.floor(Math.random() * 15) + 60,
-        timestamp: new Date().toISOString()
-      };
-
-      // Actualizar métricas Prometheus
-      cpuGauge.set(metrics.cpu);
-      memoryGauge.set(metrics.memory);
-
-      socket.emit('metrics', metrics);
-    }, 2000);
-    
     socket.on('disconnect', () => {
       console.log('🔌 Cliente desconectado:', socket.id);
-      clearInterval(interval);
     });
   });
 } else {
@@ -100,10 +104,6 @@ if (io) {
       timestamp: new Date().toISOString(),
       message: 'Modo HTTP (sin WebSockets)'
     };
-
-    // Actualizar métricas Prometheus
-    cpuGauge.set(metrics.cpu);
-    memoryGauge.set(metrics.memory);
 
     res.json(metrics);
   });
