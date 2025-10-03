@@ -125,7 +125,7 @@ kubectl -n monitoring delete pod -l app=prometheus
 
 > En el repo existe el archivo `monitoring/grafana-dashboard.json` con el dashboard exportado.
 
-![Grafana dashboard](./docs/img/grafana-dashboard.jpg)
+![Grafana dashboard](./docs/img/grafana-dashboard.JPG)
 
 ---
 
@@ -137,8 +137,10 @@ kubectl -n monitoring delete pod -l app=prometheus
 ## 🤝 Contacto / Autor
 Camilo Martínez — camilomrtz (GitHub)
 
-![App homepage scroll head](./docs/img/app-homepage1.jpg)
-![App homepage scroll foot](./docs/img/app-homepage2.jpg)
+## Homepage Example
+
+![App homepage scroll head](./docs/img/app-homepage1.JPG)
+![App homepage scroll foot](./docs/img/app-homepage2.JPG)
 
 
 
